@@ -47,7 +47,6 @@ Thank you for visiting my GitHub profile, and I look forward to connecting with 
 
   <!-- Your other information goes here -->
 
-  <!-- GitHub Stats -->
   <h2 align="center">GitHub Stats</h2>
   <p align="center">
     <img src="https://github-readme-stats.vercel.app/api?username=Kevinadiputra&show_icons=true&theme=dark" alt="GitHub Stats" />
