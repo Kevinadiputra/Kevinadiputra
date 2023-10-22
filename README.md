@@ -41,6 +41,27 @@ I'm open to collaborations and contributions to open-source projects. Feel free 
 
 Thank you for visiting my GitHub profile, and I look forward to connecting with you and sharing our experiences in the world of technology and coding!
 
-[![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=Kevinadiputra)](https://github.com/anuraghazra/github-readme-stats)[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Kevinadiputra)](https://github.com/anuraghazra/github-readme-stats)
+<!-- Set the background color to black -->
+<div style="background-color: black; padding: 20px; color: white;">
+  <h1 align="center">My GitHub Profile</h1>
+
+  <!-- Your other information goes here -->
+
+  <!-- GitHub Stats -->
+  <h2 align="center">GitHub Stats</h2>
+  <p align="center">
+    <img src="https://github-readme-stats.vercel.app/api?username=Kevinadiputra&show_icons=true&theme=dark" alt="GitHub Stats" />
+  </p>
+
+  <!-- Top Programming Languages -->
+  <h2 align="center">Top Programming Languages</h2>
+  <p align="center">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kevinadiputra&layout=compact&theme=dark" alt="Top Programming Languages" />
+  </p>
+
+  <!-- Add any other sections as needed -->
+
+</div>
+
 
 
