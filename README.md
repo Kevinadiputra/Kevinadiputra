@@ -41,8 +41,6 @@ I'm open to collaborations and contributions to open-source projects. Feel free 
 
 Thank you for visiting my GitHub profile, and I look forward to connecting with you and sharing our experiences in the world of technology and coding!
 
-[![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=Kevinadiputra)](https://github.com/anuraghazra/github-readme-stats)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Kevinadiputra)](https://github.com/anuraghazra/github-readme-stats)
+[![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=Kevinadiputra)](https://github.com/anuraghazra/github-readme-stats)[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Kevinadiputra)](https://github.com/anuraghazra/github-readme-stats)
 
 
