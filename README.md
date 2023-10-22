@@ -53,16 +53,13 @@ Thank you for visiting my GitHub profile, and I look forward to connecting with 
       <p>
         <img src="https://github-readme-stats.vercel.app/api?username=Kevinadiputra&show_icons=true&theme=dark" alt="GitHub Stats" />
       </p>
-    </div>
-
-    <!-- Top Programming Languages -->
-    <div style="flex: 1;">
       <h2>Top Programming Languages</h2>
       <p>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kevinadiputra&theme=dark" alt="Top Programming Languages" />
+        <a href="https://github.com/Kevinadiputra">
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kevinadiputra&theme=dark" alt="Top Programming Languages" />
+        </a>
       </p>
     </div>
   </div>
 
-  <!-- Add any other sections as needed -->
-</div>
+ 
