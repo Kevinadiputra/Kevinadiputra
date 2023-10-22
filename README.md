@@ -42,9 +42,6 @@ I'm open to collaborations and contributions to open-source projects. Feel free 
 Thank you for visiting my GitHub profile, and I look forward to connecting with you and sharing our experiences in the world of technology and coding!
 
 <div style="background-color: #0a1931; padding: 20px; color: white;">
-  <h1>My GitHub Profile</h1>
-
-  <!-- Your other information goes here -->
 
   <div style="display: flex; justify-content: space-between;">
     <!-- GitHub Stats -->
