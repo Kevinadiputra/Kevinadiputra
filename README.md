@@ -41,25 +41,30 @@ I'm open to collaborations and contributions to open-source projects. Feel free 
 
 Thank you for visiting my GitHub profile, and I look forward to connecting with you and sharing our experiences in the world of technology and coding!
 
-<!-- Set the background color to black -->
-<div style="background-color: black; padding: 20px; color: white;">
-  <h1 align="center">My GitHub Profile</h1>
+<div style="background-color: #0a1931; padding: 20px; color: white;">
+  <h1>My GitHub Profile</h1>
 
   <!-- Your other information goes here -->
 
-  <h2 align="center">GitHub Stats</h2>
-  <p align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=Kevinadiputra&show_icons=true&theme=dark" alt="GitHub Stats" />
-  </p>
+  <div style="display: flex; justify-content: space-between;">
+    <!-- GitHub Stats -->
+    <div style="flex: 1;">
+      <h2>GitHub Stats</h2>
+      <p>
+        <img src="https://github-readme-stats.vercel.app/api?username=Kevinadiputra&show_icons=true&theme=dark" alt="GitHub Stats" />
+      </p>
+    </div>
 
-  <!-- Top Programming Languages -->
-  <h2 align="center">Top Programming Languages</h2>
-  <p align="center">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kevinadiputra&layout=compact&theme=dark" alt="Top Programming Languages" />
-  </p>
+    <!-- Top Programming Languages -->
+    <div style="flex: 1;">
+      <h2>Top Programming Languages</h2>
+      <p>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kevinadiputra&layout=compact&theme=dark" alt="Top Programming Languages" />
+      </p>
+    </div>
+  </div>
 
   <!-- Add any other sections as needed -->
-
 </div>
 
 
