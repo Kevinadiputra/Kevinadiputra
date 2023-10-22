@@ -42,10 +42,6 @@ I'm open to collaborations and contributions to open-source projects. Feel free 
 Thank you for visiting my GitHub profile, and I look forward to connecting with you and sharing our experiences in the world of technology and coding!
 
 <div style="background-color: #0a1931; padding: 20px; color: white;">
-  <h1>My GitHub Profile</h1>
-
-  <!-- Your other information goes here -->
-
   <div style="display: flex; justify-content: space-between;">
     <!-- GitHub Stats -->
     <div style="flex: 1;">
@@ -53,7 +49,7 @@ Thank you for visiting my GitHub profile, and I look forward to connecting with 
       <p>
         <img src="https://github-readme-stats.vercel.app/api?username=Kevinadiputra&show_icons=true&theme=dark" alt="GitHub Stats" />
       </p>
-      <h2 style="color: #0074e4;">Top Programming Languages</h2> <!-- Change the color to blue -->
+      <h2 style="color: blue;">Top Programming Languages</h2> <!-- Change the color to blue -->
       <p>
         <a href="https://github.com/Kevinadiputra">
           <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kevinadiputra&theme=dark" alt="Top Programming Languages" />
