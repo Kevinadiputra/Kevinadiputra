@@ -55,11 +55,15 @@ Thank you for visiting my GitHub profile, and I look forward to connecting with 
       </p>
     </div>
 
-     <!-- Top Programming Languages -->
-  <h2 align="center">Top Programming Languages</h2>
-  <p align="center">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kevinadiputra&layout=compact&theme=dark" alt="Top Programming Languages" />
-  </p>
+    <!-- Top Programming Languages -->
+    <div style="flex: 1;">
+      <h2>Top Programming Languages</h2>
+      <p>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kevinadiputra&theme=dark" alt="Top Programming Languages" />
+      </p>
+    </div>
+  </div>
+
   <!-- Add any other sections as needed -->
 </div>
 
