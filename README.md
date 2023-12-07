@@ -1,63 +1,31 @@
-# My GitHub Profile
-
-Welcome to my GitHub profile! I'm a passionate computer science student at Sriwijaya University, specializing in computer systems. I have a strong interest in the fields of data and software engineering. Here's a little about me:
-
-## About Me
-
-- **Name:** Kevin Adiputra Mahesa
-- **University:** Sriwijaya University
-- **Major:** Computer Systems
-- **Location:** Palembang
-- **GitHub:** https://github.com/Kevinadiputra
-
-## Interests
-
-I'm enthusiastic about various aspects of computer science, with a particular focus on:
-
-- Data Science
-- Software Engineering
-
-## Contact Information
-
-You can reach out to me through the following channels:
-
-- Email: kevinadiputra66@gmail.com
-- LinkedIn: https://www.linkedin.com/in/kevin-adiputra-8339911b3/
-- Twitter: https://twitter.com/Kevinputrahesa
+# 💫 About Me:
+Welcome to my GitHub profile! I'm a passionate computer science student at Sriwijaya University, specializing in computer systems. I have a strong interest in the fields of data and software engineering. Here's a little about me:<br>Name: Kevin Adiputra Mahesa<br>University: Sriwijaya University<br>Major: Computer Systems<br>Location: Palembang<br>GitHub: https://github.com/Kevinadiputra
 
 
-## Skills
+## 🌐 Socials:
+[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/Kevin Adiputra) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/@kevinadiputra66) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/Kevin Adiputra) [![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?logo=TikTok&logoColor=white)](https://tiktok.com/@kevinadiputra275) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/Kevintrahesa) 
 
-I have experience and skills in various technologies and languages, including but not limited to:
+# 💻 Tech Stack:
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![GithubPages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300000f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=Kevinadiputra&theme=radical&hide_border=false&include_all_commits=true&count_private=false)<br/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=Kevinadiputra&theme=radical&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=Kevinadiputra&theme=radical&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
 
-- Python
-- Java
-- HTML/CSS
-- JavaScript
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=Kevinadiputra&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
-## Contribution
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
-I'm open to collaborations and contributions to open-source projects. Feel free to reach out if you have any interesting projects in mind.
+### 🔝 Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=Kevinadiputra&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
-Thank you for visiting my GitHub profile, and I look forward to connecting with you and sharing our experiences in the world of technology and coding!
+---
+[![](https://visitcount.itsvg.in/api?id=Kevinadiputra&icon=0&color=4)](https://visitcount.itsvg.in)
 
-<div style="background-color: #0a1931; padding: 20px; color: white;">
-  <div style="display: flex; justify-content: space-between;">
-    <!-- GitHub Stats -->
-    <div style="flex: 1;">
-      <h2 style="color: #0074e4;">GitHub Stats</h2> <!-- Change the color to blue -->
-      <p>
-        <img src="https://github-readme-stats.vercel.app/api?username=Kevinadiputra&show_icons=true&theme=dark" alt="GitHub Stats" />
-      </p>
-      <h2 style="color: blue;">Top Programming Languages</h2> <!-- Change the color to blue -->
-      <p>
-        <a href="https://github.com/Kevinadiputra">
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kevinadiputra&theme=dark" alt="Top Programming Languages" />
-        </a>
-      </p>
-    </div>
-  </div>
-</div>
+  ## 💰 You can help me by Donating
+  [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/PayPal.ME Kevin Adiputra) 
 
-
- 
+  
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
