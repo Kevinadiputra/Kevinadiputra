@@ -1,5 +1,5 @@
 # 💫 About Me:
-Welcome to my GitHub profile! I'm a passionate computer science student at Sriwijaya University, specializing in computer systems. I have a strong interest in the fields of data and software engineering. Here's a little about me:<br>*Name: Kevin Adiputra Mahesa<br>*University: Sriwijaya University<br>*Major: Computer Systems<br>*Location: Palembang<br>*GitHub: https://github.com/Kevinadiputra
+Welcome to my GitHub profile! I'm a passionate computer science student at Sriwijaya University, specializing in computer systems. I have a strong interest in the fields of data and software engineering. Here's a little about me:<br>-Name: Kevin Adiputra Mahesa<br>University: Sriwijaya University<br>*Major: Computer Systems<br>*Location: Palembang<br>*GitHub: https://github.com/Kevinadiputra
 
 
 ## 🌐 Socials:
