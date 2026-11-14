@@ -1,0 +1,319 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="banner-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14" />
+      <stop offset="50%" stop-color="#0b1120" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <!-- Animated Shimmer Gradient for Name -->
+    <linearGradient id="banner-shimmer" x1="0%" y1="0%" x2="200%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="25%" stop-color="#818cf8" />
+      <stop offset="50%" stop-color="#c084fc" />
+      <stop offset="75%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#38bdf8" />
+      <animateTransform
+        attributeName="gradientTransform"
+        type="translate"
+        from="-1200 0"
+        to="1200 0"
+        dur="6s"
+        repeatCount="indefinite"
+      />
+    </linearGradient>
+
+    <!-- Glowing Orbs Filters -->
+    <filter id="banner-blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="80" />
+    </filter>
+
+    <filter id="banner-code-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="24" flood-color="#0284c7" flood-opacity="0.18" />
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="banner-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.4" />
+      <circle cx="0" cy="0" r="1" fill="#38bdf8" fill-opacity="0.25" />
+    </pattern>
+
+    <!-- Laser Sweep Gradient -->
+    <linearGradient id="banner-laser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </linearGradient>
+
+    <style>
+      <![CDATA[
+        @keyframes bannerPulse {
+          0%, 100% { opacity: 0.85; transform: scale(1); }
+          50% { opacity: 0.4; transform: scale(0.92); }
+        }
+        @keyframes bannerBlink {
+          0%, 49% { opacity: 1; }
+          50%, 100% { opacity: 0; }
+        }
+        @keyframes bannerScan {
+          0% { transform: translateY(-480px); }
+          100% { transform: translateY(480px); }
+        }
+        @keyframes bannerCycle1 {
+          0%, 28% { opacity: 1; transform: translateY(0); }
+          33%, 95% { opacity: 0; transform: translateY(-8px); }
+          100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes bannerCycle2 {
+          0%, 28% { opacity: 0; transform: translateY(8px); }
+          33%, 61% { opacity: 1; transform: translateY(0); }
+          66%, 100% { opacity: 0; transform: translateY(-8px); }
+        }
+        @keyframes bannerCycle3 {
+          0%, 61% { opacity: 0; transform: translateY(8px); }
+          66%, 95% { opacity: 1; transform: translateY(0); }
+          100% { opacity: 0; transform: translateY(8px); }
+        }
+        .b-pulse { animation: bannerPulse 2.4s ease-in-out infinite; }
+        .b-cursor { animation: bannerBlink 0.9s infinite; }
+        .b-scanline { animation: bannerScan 5.5s linear infinite; }
+        .b-role-1 { animation: bannerCycle1 9s ease-in-out infinite; }
+        .b-role-2 { animation: bannerCycle2 9s ease-in-out infinite; }
+        .b-role-3 { animation: bannerCycle3 9s ease-in-out infinite; }
+      ]]>
+    </style>
+  </defs>
+
+  <!-- Base Canvas Background -->
+  <rect width="1200" height="480" rx="14" fill="url(#banner-bg)" />
+
+  <!-- Technical Grid Overlay -->
+  <rect width="1200" height="480" rx="14" fill="url(#banner-grid)" />
+
+  <!-- Ambient Blurred Glow Elements -->
+  <circle cx="220" cy="140" r="180" fill="#0284c7" opacity="0.14" filter="url(#banner-blur)" />
+  <circle cx="1020" cy="240" r="190" fill="#6366f1" opacity="0.12" filter="url(#banner-blur)" />
+  <circle cx="580" cy="420" r="150" fill="#10b981" opacity="0.08" filter="url(#banner-blur)" />
+
+  <!-- Laser Scanline Sweeper -->
+  <g class="b-scanline">
+    <rect x="0" y="0" width="1200" height="3" fill="#38bdf8" opacity="0.45" />
+    <rect x="0" y="-18" width="1200" height="36" fill="url(#banner-laser)" />
+  </g>
+
+  <!-- Outer Border Highlight -->
+  <rect x="0.5" y="0.5" width="1199" height="479" rx="13.5" fill="none" stroke="#334155" stroke-opacity="0.4" />
+
+  <!-- ==================== LEFT COLUMN ==================== -->
+  <g transform="translate(56, 52)">
+    <!-- Top System Bar / Prompt / Status Pill -->
+    <g>
+      <!-- macOS Terminal Window Dots -->
+      <circle cx="6" cy="10" r="5" fill="#ef4444" opacity="0.9" />
+      <circle cx="22" cy="10" r="5" fill="#f59e0b" opacity="0.9" />
+      <circle cx="38" cy="10" r="5" fill="#10b981" opacity="0.9" />
+
+      <!-- Active Status Badge -->
+      <rect x="68" y="0" width="224" height="22" rx="11" fill="#0c2027" stroke="#0e7490" stroke-width="1" />
+      <circle cx="82" cy="11" r="3.5" fill="#22d3ee" class="b-pulse" />
+      <text x="94" y="15" fill="#67e8f9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" letter-spacing="0.08em">AVAILABLE FOR ML &amp; DATA ROLES</text>
+    </g>
+
+    <!-- Terminal Command -->
+    <g transform="translate(0, 48)">
+      <text font-family="'JetBrains Mono', Consolas, monospace" font-size="13" font-weight="500">
+        <tspan fill="#38bdf8">kevin@workstation</tspan>
+        <tspan fill="#64748b">:</tspan>
+        <tspan fill="#cbd5e1">~</tspan>
+        <tspan fill="#f59e0b">$</tspan>
+        <tspan fill="#e2e8f0"> whoami --verbose</tspan>
+      </text>
+    </g>
+
+    <!-- Developer Main Name with Shimmering Gradient -->
+    <g transform="translate(0, 102)">
+      <text x="0" y="0" fill="url(#banner-shimmer)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="40" font-weight="800" letter-spacing="-0.02em">
+        Kevin Adiputra Mahesa
+      </text>
+    </g>
+
+    <!-- Dynamic Cycling Role Headlines -->
+    <g transform="translate(0, 134)">
+      <!-- Role 1 -->
+      <g class="b-role-1">
+        <text x="0" y="0" fill="#93c5fd" font-family="'JetBrains Mono', Consolas, monospace" font-size="18" font-weight="600">
+          â–¸ Machine Learning &amp; Deep Learning Engineer
+        </text>
+      </g>
+      <!-- Role 2 -->
+      <g class="b-role-2">
+        <text x="0" y="0" fill="#a78bfa" font-family="'JetBrains Mono', Consolas, monospace" font-size="18" font-weight="600">
+          â–¸ Data Scientist &amp; MLOps Pipeline Architect
+        </text>
+      </g>
+      <!-- Role 3 -->
+      <g class="b-role-3">
+        <text x="0" y="0" fill="#34d399" font-family="'JetBrains Mono', Consolas, monospace" font-size="18" font-weight="600">
+          â–¸ Spatial Data Science &amp; GIS Researcher
+        </text>
+      </g>
+    </g>
+
+    <!-- Core Bio & Specialization Paragraph -->
+    <g transform="translate(0, 168)">
+      <text fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13.5" line-height="1.5">
+        <tspan x="0" y="0">Architecting reproducible ML lifecycle systems, geospatial carbon</tspan>
+        <tspan x="0" y="22">monitoring dashboards, and automated high-throughput ETL workflows.</tspan>
+      </text>
+    </g>
+
+    <!-- Meta Tags / Capability Pills -->
+    <g transform="translate(0, 230)">
+      <!-- Pill 1: Location -->
+      <rect x="0" y="0" width="154" height="28" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1" />
+      <text x="12" y="18" fill="#cbd5e1" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="500">ðŸ“ Palembang, ID</text>
+
+      <!-- Pill 2: Education -->
+      <rect x="164" y="0" width="194" height="28" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1" />
+      <text x="176" y="18" fill="#cbd5e1" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="500">ðŸŽ“ Universitas Sriwijaya</text>
+
+      <!-- Pill 3: Community -->
+      <rect x="368" y="0" width="198" height="28" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1" />
+      <text x="380" y="18" fill="#cbd5e1" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="500">âš¡ GDGoC Unsri Core Team</text>
+    </g>
+
+    <!-- Verified Metrics Bar -->
+    <g transform="translate(0, 280)">
+      <rect x="0" y="0" width="566" height="66" rx="8" fill="#0f172a" fill-opacity="0.75" stroke="#1e293b" stroke-width="1" />
+
+      <!-- Metric 1 -->
+      <text x="24" y="28" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="700">RÂ² = 0.87</text>
+      <text x="24" y="48" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="500">PT Pusri Carbon Model</text>
+
+      <line x1="170" y1="14" x2="170" y2="52" stroke="#334155" stroke-width="1" stroke-opacity="0.6" />
+
+      <!-- Metric 2 -->
+      <text x="194" y="28" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="700">100%</text>
+      <text x="194" y="48" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="500">ETL Pytest Coverage</text>
+
+      <line x1="334" y1="14" x2="334" y2="52" stroke="#334155" stroke-width="1" stroke-opacity="0.6" />
+
+      <!-- Metric 3 -->
+      <text x="358" y="28" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="700">50+ Runs</text>
+      <text x="358" y="48" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="500">MLflow Tracked Experiments</text>
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT COLUMN: CODE EDITOR ==================== -->
+  <g transform="translate(668, 44)" filter="url(#banner-code-glow)">
+    <!-- Editor Window Frame -->
+    <rect width="476" height="392" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+
+    <!-- Editor Header Bar -->
+    <rect width="476" height="34" rx="10" fill="#161b22" />
+    <rect y="24" width="476" height="10" fill="#161b22" />
+    <line x1="0" y1="34" x2="476" y2="34" stroke="#30363d" stroke-width="1" />
+
+    <!-- Window Control Dots -->
+    <circle cx="16" cy="17" r="4.5" fill="#ef4444" opacity="0.8" />
+    <circle cx="30" cy="17" r="4.5" fill="#f59e0b" opacity="0.8" />
+    <circle cx="44" cy="17" r="4.5" fill="#10b981" opacity="0.8" />
+
+    <!-- Active Tab -->
+    <path d="M 68 8 L 200 8 A 4 4 0 0 1 204 12 L 204 34 L 64 34 L 64 12 A 4 4 0 0 1 68 8 Z" fill="#0d1117" />
+    <!-- Mini Python Icon -->
+    <circle cx="80" cy="21" r="5" fill="#38bdf8" fill-opacity="0.3" />
+    <text x="77" y="24" fill="#38bdf8" font-family="monospace" font-size="8.5" font-weight="bold">py</text>
+    <text x="94" y="24" fill="#e6edf3" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="500">mlops_pipeline.py</text>
+
+    <!-- Branch / Git Status -->
+    <text x="406" y="23" fill="#6e7681" font-family="'JetBrains Mono', Consolas, monospace" font-size="10">main*</text>
+
+    <!-- Code Editor Body -->
+    <g transform="translate(20, 56)" font-family="'JetBrains Mono', Consolas, monospace" font-size="11.5" line-height="1.55">
+      <!-- Line Numbers Column -->
+      <g fill="#484f58" font-size="10.5">
+        <text x="0" y="16">01</text>
+        <text x="0" y="36">02</text>
+        <text x="0" y="56">03</text>
+        <text x="0" y="76">04</text>
+        <text x="0" y="96">05</text>
+        <text x="0" y="116">06</text>
+        <text x="0" y="136">07</text>
+        <text x="0" y="156">08</text>
+        <text x="0" y="176">09</text>
+        <text x="0" y="196">10</text>
+        <text x="0" y="216">11</text>
+        <text x="0" y="236">12</text>
+        <text x="0" y="256">13</text>
+        <text x="0" y="276">14</text>
+        <text x="0" y="296">15</text>
+        <text x="0" y="316">16</text>
+      </g>
+
+      <!-- Code Content -->
+      <g transform="translate(28, 0)">
+        <!-- Line 1 -->
+        <text x="0" y="16">
+          <tspan fill="#ff7b72">import</tspan> <tspan fill="#79c0ff">mlflow</tspan>, <tspan fill="#79c0ff">docker</tspan>
+        </text>
+        <!-- Line 2 -->
+        <text x="0" y="36">
+          <tspan fill="#ff7b72">from</tspan> <tspan fill="#79c0ff">sklearn.ensemble</tspan> <tspan fill="#ff7b72">import</tspan> <tspan fill="#ffa657">XGBRegressor</tspan>
+        </text>
+        <!-- Line 3: blank -->
+        <!-- Line 4 -->
+        <text x="0" y="76">
+          <tspan fill="#ff7b72">class</tspan> <tspan fill="#ffa657">ProductionPipeline</tspan>:
+        </text>
+        <!-- Line 5 -->
+        <text x="0" y="96">
+          <tspan fill="#79c0ff">&#160;&#160;def</tspan> <tspan fill="#d2a8ff">__init__</tspan>(<tspan fill="#e6edf3">self</tspan>, <tspan fill="#ffa657">stage</tspan>=<tspan fill="#a5d6ff">"staging"</tspan>):
+        </text>
+        <!-- Line 6 -->
+        <text x="0" y="116">
+          <tspan fill="#e6edf3">&#160;&#160;&#160;&#160;self.experiment = mlflow.set_exp(</tspan><tspan fill="#a5d6ff">"biomass_agb"</tspan><tspan fill="#e6edf3">)</tspan>
+        </text>
+        <!-- Line 7 -->
+        <text x="0" y="136">
+          <tspan fill="#e6edf3">&#160;&#160;&#160;&#160;self.model = XGBRegressor(n_est=</tspan><tspan fill="#79c0ff">300</tspan><tspan fill="#e6edf3">, lr=</tspan><tspan fill="#79c0ff">0.05</tspan><tspan fill="#e6edf3">)</tspan>
+        </text>
+        <!-- Line 8: blank -->
+        <!-- Line 9 -->
+        <text x="0" y="176">
+          <tspan fill="#79c0ff">&#160;&#160;def</tspan> <tspan fill="#d2a8ff">evaluate_and_deploy</tspan>(<tspan fill="#e6edf3">self</tspan>, <tspan fill="#ffa657">X_val</tspan>, <tspan fill="#ffa657">y_val</tspan>):
+        </text>
+        <!-- Line 10 -->
+        <text x="0" y="196">
+          <tspan fill="#e6edf3">&#160;&#160;&#160;&#160;r2_score = self.model.score(X_val, y_val)</tspan>
+        </text>
+        <!-- Line 11 -->
+        <text x="0" y="216">
+          <tspan fill="#ff7b72">&#160;&#160;&#160;&#160;if</tspan> <tspan fill="#e6edf3">r2_score &gt;=</tspan> <tspan fill="#79c0ff">0.85</tspan>:
+        </text>
+        <!-- Line 12 -->
+        <text x="0" y="236">
+          <tspan fill="#7ee787">&#160;&#160;&#160;&#160;&#160;&#160;# Build &amp; ship verified container</tspan>
+        </text>
+        <!-- Line 13 -->
+        <text x="0" y="256">
+          <tspan fill="#e6edf3">&#160;&#160;&#160;&#160;&#160;&#160;image = docker.build(tag=</tspan><tspan fill="#a5d6ff">"kevin/agb-api:v2"</tspan><tspan fill="#e6edf3">)</tspan>
+        </text>
+        <!-- Line 14 -->
+        <text x="0" y="276">
+          <tspan fill="#e6edf3">&#160;&#160;&#160;&#160;&#160;&#160;mlflow.register_model(</tspan><tspan fill="#a5d6ff">"models:/agb/prod"</tspan><tspan fill="#e6edf3">)</tspan>
+        </text>
+        <!-- Line 15 -->
+        <text x="0" y="296">
+          <tspan fill="#ff7b72">&#160;&#160;&#160;&#160;&#160;&#160;return</tspan> <tspan fill="#79c0ff">{"status": "DEPLOYED", "r2": r2_score}</tspan>
+        </text>
+        <!-- Line 16: Blinking Cursor -->
+        <text x="0" y="316">
+          <tspan fill="#e6edf3">&#160;&#160;&#160;&#160;</tspan><tspan fill="#22d3ee" class="b-cursor">â–‹</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
+

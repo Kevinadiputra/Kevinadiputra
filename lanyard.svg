@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 380" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Card Glass Gradient -->
+    <linearGradient id="lanyard-card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.95" />
+      <stop offset="60%" stop-color="#0f172a" stop-opacity="0.98" />
+      <stop offset="100%" stop-color="#090d16" stop-opacity="1" />
+    </linearGradient>
+
+    <!-- Metallic Strap & Clip Gradient -->
+    <linearGradient id="lanyard-metal-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="50%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+
+    <!-- Woven Strap Gradient -->
+    <linearGradient id="lanyard-strap-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="35%" stop-color="#0ea5e9" />
+      <stop offset="70%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+
+    <!-- Golden IC Chip Gradient -->
+    <linearGradient id="lanyard-chip-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="50%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <!-- Holographic Glare Gradient -->
+    <linearGradient id="lanyard-glare-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="45%" stop-color="#38bdf8" stop-opacity="0.12" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="55%" stop-color="#c084fc" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Drop Shadow for Lanyard & Card -->
+    <filter id="lanyard-shadow" x="-20%" y="-10%" width="140%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.55" />
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0284c7" flood-opacity="0.2" />
+    </filter>
+
+    <clipPath id="lanyard-card-clip">
+      <rect x="85" y="80" width="290" height="280" rx="16" />
+    </clipPath>
+
+    <style>
+      <![CDATA[
+        @keyframes lanyardSwing {
+          0%   { transform: rotate(10deg); }
+          15%  { transform: rotate(-7.5deg); }
+          30%  { transform: rotate(5deg); }
+          45%  { transform: rotate(-3deg); }
+          60%  { transform: rotate(1.8deg); }
+          75%  { transform: rotate(-0.8deg); }
+          100% { transform: rotate(0deg); }
+        }
+        @keyframes lanyardDrift {
+          0%, 100% { transform: rotate(0deg); }
+          50% { transform: rotate(0.9deg); }
+        }
+        @keyframes lanyardGlareSweep {
+          0% { transform: translateX(-380px) translateY(-100px) rotate(25deg); }
+          35%, 100% { transform: translateX(450px) translateY(100px) rotate(25deg); }
+        }
+        @keyframes lanyardPulse {
+          0%, 100% { opacity: 0.9; }
+          50% { opacity: 0.4; }
+        }
+        .lanyard-assembly {
+          transform-origin: 230px 0px;
+          animation: lanyardSwing 3.6s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards, lanyardDrift 6s ease-in-out 3.6s infinite alternate;
+        }
+        .lanyard-glare {
+          animation: lanyardGlareSweep 5s ease-in-out infinite;
+        }
+        .lanyard-dot {
+          animation: lanyardPulse 2s infinite;
+        }
+      ]]>
+    </style>
+  </defs>
+
+  <!-- Complete Swinging Pendulum Assembly -->
+  <g class="lanyard-assembly" filter="url(#lanyard-shadow)">
+    <!-- Woven Lanyard Fabric Strap Entering Top Canvas -->
+    <path d="M 216 0 L 216 46 L 244 46 L 244 0 Z" fill="url(#lanyard-strap-grad)" />
+    <!-- Strap Stitching Details -->
+    <line x1="219" y1="0" x2="219" y2="46" stroke="#bae6fd" stroke-width="0.8" stroke-dasharray="2 2" opacity="0.6" />
+    <line x1="241" y1="0" x2="241" y2="46" stroke="#bae6fd" stroke-width="0.8" stroke-dasharray="2 2" opacity="0.6" />
+
+    <!-- Metal Buckle / Clasp Base -->
+    <rect x="212" y="44" width="36" height="12" rx="3" fill="url(#lanyard-metal-grad)" stroke="#475569" stroke-width="0.5" />
+
+    <!-- Metallic Swivel Ring -->
+    <path d="M 222 56 C 222 66, 238 66, 238 56 Z" fill="none" stroke="url(#lanyard-metal-grad)" stroke-width="3.5" />
+
+    <!-- Clasp Hook & Attachment Loop -->
+    <rect x="226" y="64" width="8" height="14" rx="2" fill="url(#lanyard-metal-grad)" />
+    <circle cx="230" cy="74" r="3.5" fill="#1e293b" />
+
+    <!-- Card Slot Cutout Hole in Badge -->
+    <rect x="216" y="86" width="28" height="7" rx="3.5" fill="#030712" stroke="#334155" stroke-width="1" />
+
+    <!-- ==================== BADGE BODY ==================== -->
+    <rect x="85" y="80" width="290" height="280" rx="16" fill="url(#lanyard-card-grad)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.35" />
+
+    <!-- Inner Card Tech Border Accent -->
+    <rect x="91" y="86" width="278" height="268" rx="12" fill="none" stroke="#1e293b" stroke-width="1" stroke-dasharray="8 4" opacity="0.6" />
+
+    <!-- Header Section: Organization & Security Clearance -->
+    <g transform="translate(104, 106)">
+      <!-- Mini Security Shield -->
+      <path d="M 4 2 L 14 2 C 14 8, 9 12, 9 12 C 9 12, 4 8, 4 2 Z" fill="#38bdf8" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1" />
+      <text x="20" y="9" fill="#38bdf8" font-family="'JetBrains Mono', Consolas, monospace" font-size="8.5" font-weight="700" letter-spacing="0.1em">UNIVERSITAS SRIWIJAYA // GDGOC</text>
+      <text x="20" y="20" fill="#64748b" font-family="'JetBrains Mono', Consolas, monospace" font-size="7.5" font-weight="500">ML-CORE // LEVEL-03 ACCESS</text>
+    </g>
+
+    <!-- Golden Smart Card IC Chip -->
+    <g transform="translate(310, 104)">
+      <rect x="0" y="0" width="36" height="28" rx="4" fill="url(#lanyard-chip-grad)" stroke="#b45309" stroke-width="0.75" />
+      <line x1="0" y1="9" x2="36" y2="9" stroke="#78350f" stroke-width="0.6" />
+      <line x1="0" y1="19" x2="36" y2="19" stroke="#78350f" stroke-width="0.6" />
+      <line x1="18" y1="0" x2="18" y2="28" stroke="#78350f" stroke-width="0.6" />
+      <circle cx="18" cy="14" r="4.5" fill="none" stroke="#78350f" stroke-width="0.75" />
+    </g>
+
+    <!-- Middle Section: Neon Avatar Monogram & Status -->
+    <g transform="translate(104, 150)">
+      <!-- Outer Glow Ring -->
+      <circle cx="34" cy="34" r="34" fill="#0284c7" fill-opacity="0.12" />
+      <circle cx="34" cy="34" r="30" fill="#0f172a" stroke="#38bdf8" stroke-width="1.8" />
+
+      <!-- Avatar Tech Monogram -->
+      <text x="34" y="42" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="22" font-weight="900" text-anchor="middle" letter-spacing="-0.04em">KA</text>
+
+      <!-- Active Badge Indicator -->
+      <circle cx="56" cy="54" r="6" fill="#090d16" />
+      <circle cx="56" cy="54" r="4.5" fill="#10b981" class="lanyard-dot" />
+
+      <!-- Developer Info -->
+      <g transform="translate(80, 18)">
+        <text x="0" y="0" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="14" font-weight="700" letter-spacing="-0.01em">Kevin Adiputra M.</text>
+        <text x="0" y="16" fill="#38bdf8" font-family="'JetBrains Mono', Consolas, monospace" font-size="9" font-weight="600">ML &amp; Data Science Engineer</text>
+        <text x="0" y="30" fill="#94a3b8" font-family="'JetBrains Mono', Consolas, monospace" font-size="8">ID: KA-2026-ENG-PASS</text>
+        <text x="0" y="42" fill="#64748b" font-family="'JetBrains Mono', Consolas, monospace" font-size="8">LOC: Palembang, Indonesia</text>
+      </g>
+    </g>
+
+    <!-- Core Specializations Mini Matrix -->
+    <g transform="translate(104, 246)">
+      <rect x="0" y="0" width="252" height="44" rx="6" fill="#080c14" stroke="#1e293b" stroke-width="0.8" />
+      <!-- Col 1 -->
+      <text x="14" y="18" fill="#38bdf8" font-family="'JetBrains Mono', Consolas, monospace" font-size="8" font-weight="700">SPECIALIZATION</text>
+      <text x="14" y="32" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="600">MLOps &amp; Deep Learning</text>
+
+      <line x1="140" y1="8" x2="140" y2="36" stroke="#1e293b" stroke-width="1" />
+
+      <!-- Col 2 -->
+      <text x="152" y="18" fill="#34d399" font-family="'JetBrains Mono', Consolas, monospace" font-size="8" font-weight="700">EXPERIENCE</text>
+      <text x="152" y="32" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="600">GDGoC &amp; Pusri</text>
+    </g>
+
+    <!-- Bottom Section: Vector Barcode & Security Strip -->
+    <g transform="translate(104, 304)">
+      <!-- Barcode Lines -->
+      <g fill="#e2e8f0" opacity="0.85">
+        <rect x="0" y="0" width="2" height="28" />
+        <rect x="4" y="0" width="4" height="28" />
+        <rect x="10" y="0" width="1" height="28" />
+        <rect x="13" y="0" width="3" height="28" />
+        <rect x="18" y="0" width="5" height="28" />
+        <rect x="25" y="0" width="2" height="28" />
+        <rect x="29" y="0" width="3" height="28" />
+        <rect x="34" y="0" width="1" height="28" />
+        <rect x="37" y="0" width="4" height="28" />
+        <rect x="43" y="0" width="2" height="28" />
+        <rect x="47" y="0" width="5" height="28" />
+        <rect x="54" y="0" width="1" height="28" />
+        <rect x="57" y="0" width="3" height="28" />
+        <rect x="62" y="0" width="2" height="28" />
+        <rect x="66" y="0" width="4" height="28" />
+        <rect x="72" y="0" width="1" height="28" />
+        <rect x="75" y="0" width="5" height="28" />
+        <rect x="82" y="0" width="2" height="28" />
+        <rect x="86" y="0" width="3" height="28" />
+        <rect x="91" y="0" width="1" height="28" />
+        <rect x="94" y="0" width="4" height="28" />
+        <rect x="100" y="0" width="2" height="28" />
+        <rect x="104" y="0" width="3" height="28" />
+        <rect x="109" y="0" width="5" height="28" />
+        <rect x="116" y="0" width="2" height="28" />
+        <rect x="120" y="0" width="4" height="28" />
+      </g>
+
+      <!-- Serial Number & Hologram Seal -->
+      <g transform="translate(142, 6)">
+        <text x="0" y="10" fill="#94a3b8" font-family="'JetBrains Mono', Consolas, monospace" font-size="8.5" font-weight="600">AUTH: VERIFIED_ENG</text>
+        <text x="0" y="22" fill="#64748b" font-family="'JetBrains Mono', Consolas, monospace" font-size="7.5">HASH: 0x8F9A2C...E1D</text>
+      </g>
+    </g>
+
+    <!-- Diagonal Holographic Glare Sweeping Across Card -->
+    <g clip-path="url(#lanyard-card-clip)">
+      <rect x="0" y="0" width="180" height="420" fill="url(#lanyard-glare-grad)" class="lanyard-glare" />
+    </g>
+  </g>
+</svg>
